@@ -147,9 +147,20 @@ const Register = () => {
             name="cf_password"
             value={cf_password}
           />
+         
+          <InputRightElement width="4.5rem">
+            <Button h="1.75rem" size="xs" onClick={handleClick}>
+              {show ? "Hide" : "Show"}
+            </Button>
+          </InputRightElement>
+        </InputGroup>
+        <FormLabel mb="0px">Concerned Person's Mail</FormLabel>
+
+        <InputGroup size="md">
+          
            <Input
             pr="4.5rem"
-            
+            type={show ? "text" : "password"}
             placeholder="Please enter concerned person email"
             onChange={handleChange}
             name="c_mail"
